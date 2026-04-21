@@ -65,6 +65,11 @@ def greeting_page():
         st.rerun()
 
 def main():
+
+    code = '''def hello():
+    print("Hello, My name is Baviskop and I will become an AI engineer!")'''
+
+    st.code(code, language='python')
     
     if 'logged_in' not in st.session_state:
         st.session_state.logged_in = False
